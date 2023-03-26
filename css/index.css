@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 2px;
+}
+
+li {
+	list-style: none;
+}
+p{
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: normal;
+}
+
+.anone {
+	text-decoration: none;
+	color: white;
+}
+.anone:hover {
+	text-shadow: 2px 2px 5px #ffecec;
+	color: white;
+	transform: scale(1.25);
+}
+
+.navbar-bgcolor {
+	background-color: #784cfb;
+}
+
+.footer-logo {
+	height: 25px;
+	width: 25px;
+}
+.landing-page-title{
+	font-size: 5rem;
+}
+.landing-page-content{
+	background-image: linear-gradient(to top right, #784cfb, #bf7ba7);
+}
+
+.minvh {
+	min-height: 50vh;
+}
+.card-size {
+	height: 10rem;
+	width: 10rem;
+	margin: 0 auto;
+}
+.borderbottom::after {
+  content: "";
+  display: block;
+  width: 70%;
+  padding-top: 3px;
+  border-bottom: 4px solid #784cfb;
+  margin: auto;
+  border-radius: 20px;
+}
+.borderbottom1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  padding-top: 3px;
+  border-bottom: 4px solid #784cfb;
+  margin: auto;
+  border-radius: 20px;
+}
+.extra-margin{
+	margin-top: 5rem;
+}
+.bimg img{
+	border:	2px solid none;
+	border-radius: 100px;
+	object-fit: cover;
+	transition: .2s linear;
+}
+.bimg img:hover{
+	transform: scale(1.1);
+}
+
+.popup-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .9);
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+.popup-image span {
+	position: absolute;
+	top: 25px;
+	right: 10px;
+	font-size: 60px;
+	font-weight: bolder;
+	color: white;
+	cursor: pointer;
+	z-index: 100;
+}
+.popup-image img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	width: 750px;
+	object-fit: cover;
+}
+
+@media (max-width: 768px){
+	.popup-image img {
+	width: 95%;
+}
+}
+
+.aboutus img{
+	height: 100%;
+	width: 100%;
+}
+
+.pink-background {
+	background-color: #ffecec;
+	background-image: linear-gradient(to bottom right, #784cfb, #ffecec);
+}
+#animate-text{
+	border-right: 3px solid;
+	width: 100%;
+	overflow: hidden;
+	animation: cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+	50% {border-color: transparent;}
+}
+
+.bg-container {
+	background-image: url('../images/shapes.png');
+	background-color: rgba(120, 76, 251, .3);
+	background-attachment: fixed;
+}
+
+.bg-darken {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.download{
+	color: white;
+}
+.download:hover{
+	color: black;
+	cursor: pointer;
+}
+
+.jeykey-logo{
+	height: 4rem;
+	width: 7rem;
+}
+.jeykey-logo-nav{
+	height: 2.5rem;
+	width: 5.5rem;
+}
+
+footer {
+	min-height: 10vh;
+	background-color: #292525;
+	bottom: 0;
+}
+
+.text-border{
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.aboutus-rounded{
+	border-radius: 30px;
+}
+
+.d-md-flex div{
+	height: 200px;
+	width: 500px;
+}
+.title-bg {
+	background-color: #ffecec;
+}
